@@ -5,9 +5,8 @@ import "./style.css";
 import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
-window.onload = function() {
-  //write your code here
-
+//write your code here
+function generate() {
   // Simbols
   let symbol = Math.floor(Math.random() * 4);
   if (symbol == 0) {
@@ -65,4 +64,8 @@ window.onload = function() {
     document.querySelector("#carta").innerHTML =
       '<p class="display-1">' + number + "</p>";
   console.log(number);
-};
+}
+let ok = document.querySelector("#gerar");
+window.onload = generate();
+ok.addEventListener("click", generate);
+window.setInterval(generate, 10000);
