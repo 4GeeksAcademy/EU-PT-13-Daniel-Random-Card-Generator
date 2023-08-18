@@ -2,9 +2,8 @@
 
 .cards {
   position: relative;
-
-  width: 300px;
-  height: 300px;
+  height: 1%;
+  width: 35vh;
 
   perspective: 500px;
 }
